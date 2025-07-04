@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artistic Moments Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1 class="title">✨ Artistic Moments Gallery ✨</h1>
+ 
+
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">Show All</button>
+    <button onclick="filterImages('animals')">Animals</button>
+    <button onclick="filterImages('travel')">Travel</button>
+    <button onclick="filterImages('food')">Food</button>
+    <button onclick="filterImages('nature')">Nature</button>
+  </div>
+
+  <div class="gallery">
+    <!-- Animals -->
+    <img src="image/cat.jpg" class="gallery-img animals" alt="Cat" />
+    <img src="image/dog.jpg" class="gallery-img animals" alt="Dog" />
+    <img src="image/parrot1.jpg" class="gallery-img animals" alt="Parrot" />
+
+    <!-- Travel -->
+    <img src="image/beach.jpg" class="gallery-img travel" alt="Beach" />
+    <img src="image/mountain.jpg" class="gallery-img travel" alt="Mountain" />
+    <img src="image/travel.jpg" class="gallery-img travel" alt="Travel" />
+
+    <!-- Food -->
+    <img src="image/burger.jpg" class="gallery-img food" alt="Burger" />
+    <img src="image/pizza.jpg" class="gallery-img food" alt="Pizza" />
+    <img src="image/food.jpg" class="gallery-img food" alt="Food" />
+
+    <!-- Nature -->
+    <img src="image/river.jpg" class="gallery-img nature" alt="River" />
+    <img src="image/flowers.jpg" class="gallery-img nature" alt="Flowers" />
+    <img src="image/forest.jpg" class="gallery-img nature" alt="Forest" />
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img" src="" alt="Expanded Image" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
